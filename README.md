@@ -1,11 +1,12 @@
-# Project 1 Readme file
+# Project 1: NutraValue Readme file
 
-Idea Health and Nutrition
-    -User login and password saved to local cache 
-    -BMI APIs inputs saved to cache 
-    -Recomended Food and/or exersise APIs 
-        -exersise API could include local cache location with weather api
-    -note recording api for user reminders?
+## Intention
+NutraValue is an attempt at creating an all in one health and nutrition application
+   -it is ment to provide easy access to recipes and potential exersise regiments
+
+## APIs and code base
+NutraValue currently uses Javascript, CSS and HTML
+it has access to API Materialize and is in the proccess of integrating openweathermap API and JamesVaris' BMI-API on github
 
 ## Potential API's 
     -https://github.com/JHiltunen/BMI-API
