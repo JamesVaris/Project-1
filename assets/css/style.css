@@ -1,0 +1,65 @@
+.myPopup {
+    position: relative;
+    opacity: 0;
+    display: none;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+.myPopup:target {
+    display: block;
+    opacity: 1;
+}
+
+.myPopup > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #6d2d2d;
+}
+
+.close {
+    background: #5151bb;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+}
+
+.close:hover {background: #00d9ff;}
+
+.input-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    color: #535252;
+}
+
+input {
+    background-color: whitesmoke;
+    border-radius: 3px;
+    border-width: 1px;
+    color: #000000;
+    font-size: 1.1em;
+    height: 45px;
+    line-height: 20px;
+    margin: 0;
+    margin-top: 10px;
+    max-width: 100%;
+    padding: 8px 8px 8px 8px;
+    transition-delay: 0s, 0s;
+    transition-duration: 0.2s, 0.2s;
+    transition-property: background-color, color;
+    transition-timing-function: ease, ease;
+    vertical-align: middle;
+    width: 100%;
+}

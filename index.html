@@ -22,21 +22,74 @@
 <body>
     <!--Navigation Bar-->
     <nav class="light-blue lighten-1" role="navigation">
-      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">NutriValue</a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#">Navbar Link</a></li>
+          <li>
+            <a href="#">Navbar Link</a>
+            <a href="#openPopup2">BMI Calculator</a>
+            <a href="#openPopup1">Your Weather</a>
+          </li>
         </ul>
         <ul id="nav-mobile" class="sidenav">
-          <li><a href="#">Navbar Link</a></li>
+          <li><a href="#">Navbar Link</a>
+            <a href="#openPopup">BMI Calculator</a>
+            <a href="#openPopup">Your Weather</a>
+          </li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       </div>
     </nav>
+    <div id="openPopup1" class="myPopup">
+      <div>
+        <h2>Your Weather</h2>
+        <a href="#close" title=" Close" class="close">X</a>
+        <form method="POST">
+          <div class="input-group">
+            <label for="lat">Latitude</label>
+            <input type="text" name="lat" id="lat" placeholder="33.44" />
+          </div>
+          <div class="input-group">
+            <label for="long">Longitude</label>
+            <input type="text" name="long" id="long" placeholder="-94.04" />
+          </div>
+          <div id="msg"></div>
+          <button id="retrieve">Get Weather</button>
+          <div id="weatherInfo" class ="weatherInfo">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="openPopup2" class="myPopup">
+      <div>
+        <h2>BMI Calculator</h2>
+        <a href="#close" title=" Close" class="close">X</a>
+        <form method="POST">
+          <div class="input-group">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" placeholder="Jane" />
+          </div>
+          <div class="input-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Doe" />
+          </div>
+          <div class="input-group">
+            <label for="height">Height</label>
+            <input type="text" name="height" id="height" placeholder="Inches e.g. 70 is five feet 10 inches" />
+          </div>
+          <div class="input-group">
+            <label for="weight">Weight</label>
+            <input type="text" name="weight" id="weight" placeholder="pounds e.g. 135" />
+          </div>
+          <div id="msg"></div>
+          <button id="calculate">Calculate</button>
+        </form>
+      </div>
+    </div>
     <!--Header-->
     <div class="section no-pad-bot" id="index-banner">
       <div class="container">
         <br><br>
-        <h1 class="header center orange-text">Starter Template</h1>
+        <h1 class="header center orange-text">Welcome to NutriValue</h1>
         <div class="row center">
           <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
         </div>
